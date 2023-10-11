@@ -7,13 +7,14 @@
     android:background="#AFE4B1"
     android:gravity="bottom"
     android:orientation="vertical"
-    tools:context=".AddActivity">
+    tools:context=".UpdateActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:fontFamily="@font/black_ops_one"
-        android:text="Add Student"
+        android:text="Update Student"
         android:textAlignment="center"
         android:textColor="#DF6A6A"
         android:textSize="45sp">
@@ -24,8 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Admin Panel"
         android:fontFamily="@font/black_ops_one"
+        android:text="Admin Panel"
         android:textAlignment="center"
         android:textColor="#D1366B"
         android:textSize="30sp">
@@ -33,19 +34,14 @@
     </TextView>
 
 
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:src="@drawable/new_student">
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:padding="7dp"
-            android:src="@drawable/new_student">
-
-        </ImageView>
-
-
-
-
+    </ImageView>
 
 
     <LinearLayout
@@ -68,7 +64,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
-                android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -83,7 +81,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
-                android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -98,7 +98,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -113,7 +115,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="number"
-                android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -128,19 +132,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
-                android:textColor="@color/black"></com.google.android.material.textfield.TextInputEditText>
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/saveBtn"
-            android:layout_width="110dp"
+            android:id="@+id/updateBtn"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="#F2FAE9"
-            android:text="Save"
+            android:text="Update"
             android:textColor="#03A9F4"
             android:textSize="25sp"
             android:textStyle="bold"

@@ -9,7 +9,7 @@ android {
         viewBinding = true
     }
     namespace = "com.example.studentmanagementadmin"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.studentmanagementadmin"

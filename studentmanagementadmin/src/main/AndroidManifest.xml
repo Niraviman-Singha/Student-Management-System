@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentManagementSystem">
         <activity
+            android:name=".DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddActivity"
             android:exported="false" />
         <activity
