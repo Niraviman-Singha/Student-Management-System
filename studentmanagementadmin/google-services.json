@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "282048938672",
+    "project_id": "studentmanagementsystem-acb50",
+    "storage_bucket": "studentmanagementsystem-acb50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282048938672:android:8111f725900adcf2ea3175",
+        "android_client_info": {
+          "package_name": "com.example.studentmanagementadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG9pzCYIJRbFhcr0AM8CHLZISjgdVibPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282048938672:android:bb206bb265c9f1c9ea3175",
+        "android_client_info": {
+          "package_name": "com.example.studentmanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG9pzCYIJRbFhcr0AM8CHLZISjgdVibPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

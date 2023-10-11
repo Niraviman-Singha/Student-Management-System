@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#579EBD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Admin Panel"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/student">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/graduated">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@drawable/background"
+        android:layout_height="400dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addStudentBtn"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F2FAE9"
+            android:text="Add Student"
+            android:textColor="#03A9F4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:strokeColor="#F85454"
+            app:strokeWidth="1dp">
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateStudentBtn"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F2FAE9"
+            android:text="Update Student"
+            android:textColor="#03A9F4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:strokeColor="#F85454"
+            app:strokeWidth="1dp">
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteStudentBtn"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F2FAE9"
+            android:text="Delete Student"
+            android:textColor="#03A9F4"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="100dp"
+            app:cornerRadius="10dp"
+            app:strokeColor="#F85454"
+            app:strokeWidth="1dp">
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
