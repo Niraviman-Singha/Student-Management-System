@@ -42,8 +42,7 @@ class DeleteActivity : AppCompatActivity() {
             }
             .addOnFailureListener {
                 Toast.makeText(this,"Delete Failed", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@DeleteActivity, MainActivity::class.java))
-                finish()
+
             }
 
     }

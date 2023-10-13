@@ -4,122 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#AFE4B1"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="bottom"
-    android:background="#579EBD"
+    android:padding="15dp"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Information"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="25sp">
+        android:layout_marginTop="16dp"
+        android:text="Search Student"
+        android:textColor="#613E0A"
+        android:textSize="50sp"
+        android:textStyle="bold">
 
     </TextView>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Admin Panel"
-        android:layout_marginBottom="100dp"
-        android:textColor="@color/white"
-        android:textSize="25sp">
+        android:layout_marginTop="4dp"
+        android:text="Student Panel"
+        android:textColor="#530C60"
+        android:textSize="30sp"
+        android:textStyle="bold">
 
     </TextView>
 
-    <LinearLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/searchBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F2FAE9"
+        android:text="Search"
+        android:textColor="#03A9F4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:strokeColor="#F85454"
+        app:strokeWidth="1dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/batchTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:padding="10dp"
-        android:orientation="horizontal">
+        android:text="Batch"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/student">
-
-        </ImageView>
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="200dp"
-            android:src="@drawable/graduated">
-
-        </ImageView>
+    </TextView>
 
 
-    </LinearLayout>
-
-
-
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/nameTV"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom"
-        android:background="@drawable/background"
-        android:layout_height="400dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/addStudentBtn"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#F2FAE9"
-            android:text="Add Student"
-            android:textColor="#03A9F4"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:strokeColor="#F85454"
-            app:strokeWidth="1dp">
-        </com.google.android.material.button.MaterialButton>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/updateStudentBtn"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#F2FAE9"
-            android:text="Update Student"
-            android:textColor="#03A9F4"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:strokeColor="#F85454"
-            app:strokeWidth="1dp">
-        </com.google.android.material.button.MaterialButton>
+    </TextView>
 
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/deleteStudentBtn"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#F2FAE9"
-            android:text="Delete Student"
-            android:textColor="#03A9F4"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="100dp"
-            app:cornerRadius="10dp"
-            app:strokeColor="#F85454"
-            app:strokeWidth="1dp">
-        </com.google.android.material.button.MaterialButton>
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
 
 
+    <TextView
+        android:id="@+id/phoneTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
 
 
+    <TextView
+        android:id="@+id/subjectTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Subject"
+        android:textColor="#3B0943"
+        android:textSize="20sp">
 
+    </TextView>
 
-    </LinearLayout>
 
 </LinearLayout>

@@ -55,8 +55,7 @@ class UpdateActivity : AppCompatActivity() {
         }
             .addOnFailureListener {
                 Toast.makeText(this@UpdateActivity,"Update Failed",Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@UpdateActivity,MainActivity::class.java))
-                finish()
+
             }
     }
 }

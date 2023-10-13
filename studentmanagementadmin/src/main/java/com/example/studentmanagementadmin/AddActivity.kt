@@ -41,8 +41,7 @@ class AddActivity : AppCompatActivity() {
             }
                 .addOnFailureListener {
                     Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@AddActivity, MainActivity::class.java))
-                    finish()
+
                 }
 
         }

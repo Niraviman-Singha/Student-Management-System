@@ -154,7 +154,9 @@
             android:textStyle="bold"
             app:cornerRadius="10dp"
             app:strokeColor="#F85454"
-            app:strokeWidth="1dp"></com.google.android.material.button.MaterialButton>
+            app:strokeWidth="1dp">
+
+        </com.google.android.material.button.MaterialButton>
 
 
     </LinearLayout>
