@@ -35,7 +35,6 @@ class DeleteActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().getReference("Students")
 
         database.child(name+phone).removeValue()
-
             .addOnSuccessListener {
                 Toast.makeText(this,"Deleted", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this@DeleteActivity, MainActivity::class.java))
@@ -43,6 +42,8 @@ class DeleteActivity : AppCompatActivity() {
             }
             .addOnFailureListener {
                 Toast.makeText(this,"Delete Failed", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@DeleteActivity, MainActivity::class.java))
+                finish()
             }
 
     }

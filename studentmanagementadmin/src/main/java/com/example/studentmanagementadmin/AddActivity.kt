@@ -1,5 +1,6 @@
 package com.example.studentmanagementadmin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -35,9 +36,13 @@ class AddActivity : AppCompatActivity() {
                 binding.subjectET.text?.clear()
 
                 Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@AddActivity, MainActivity::class.java))
+                finish()
             }
                 .addOnFailureListener {
                     Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this@AddActivity, MainActivity::class.java))
+                    finish()
                 }
 
         }
