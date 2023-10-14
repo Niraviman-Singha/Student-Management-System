@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Name"
+        android:textColorHint="#0E1A5A"
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Phone"
+        android:textColorHint="#0E1A5A"
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText

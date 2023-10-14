@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.addBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity,AddActivity::class.java))
-            finish()
+           // finish()
         }
         binding.updateBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity,UpdateActivity::class.java))
-            finish()
+           // finish()
         }
         binding.deleteBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity,DeleteActivity::class.java))
-            finish()
+           // finish()
         }
 
 
